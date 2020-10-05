@@ -1,0 +1,26 @@
+####1.jpg can be any logo image which will show at the top of webpage like company logo.
+####three.jpg can be any image that will background image for this webpage.
+
+<!DOCTYPE html>
+<html>
+<body>
+<img src="1.jpg">
+<style>
+body {
+  background-color: lightblue;
+  background-image: url("three.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 298%;
+}
+</style>
+
+<h2 style="font-family:verdana; color:white"><u>Server Health Statistics</u></h2>
+
+<form action="cgi-bin/health_status.sh" method="get">
+  <h4 style="font-family:verdana; color:white"><u>Enter Server Name:</u>
+  <input type="text" name="server_name" maxlength = "15" required="required" /> <br></h4>
+  <input type="submit" value="Submit"> <button type="reset" value="Reset">Reset</button>
+</form>
+
+</body>
+</html>
