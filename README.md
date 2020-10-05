@@ -9,4 +9,5 @@ To fetch the server configuration and health report
     $ cat /etc/httpd/conf/httpd.conf| grep DocumentRoot
        DocumentRoot "/var/www/html"
 4. Now place Healthreport.html in /var/www/html dir and get_server_report.sh , server_health_report.sh in /var/www/cgi-bin dir. Make sure permission on html file would be 644, bash scripts would be 755.
-5. Once you have all the files in place and open the browser with master server IP.
+5. Make sure to use a user with sudo privileges. In scripts "user_name" should be replaced with service user on the server. It can be local user with sudo privileges.
+6. Once you have all the files in place and open the browser with master server IP.
